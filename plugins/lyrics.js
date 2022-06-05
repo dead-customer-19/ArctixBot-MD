@@ -5,6 +5,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (!teks) throw `Use example ${usedPrefix}${command} hallo`
     const result = await lyricsv2(teks).catch(async _ => await lyrics(teks))
     m.reply(`
+ insta ❤️ *@wox_bella*
 🔮𝗟𝗬𝗥𝗜𝗖𝗦 *${result.title}*
 🔮𝗔𝗨𝗧𝗛𝗢𝗥 ${result.author}
 
